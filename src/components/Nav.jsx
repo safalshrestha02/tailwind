@@ -8,13 +8,13 @@ export default function Nav() {
   };
 
   return (
-    <header className="flex bg-[#f3f3f3] rounded-[54px] m-[26px] justify-between items-center">
-      <a href="#" className="flex item-center pl-[26px] mr-[54px]">
-        <img src="/vite.svg" alt="logo" className="h-[28px] w-[28px]" />
+    <header className="flex bg-[#f3f3f3] rounded-[54px] m-[26px] px-[26px] justify-between items-center">
+      <a href="#">
+        <img src="/vite.svg" alt="logo" className="item-center mr-[54px]" />
       </a>
       <nav className="flex justify-between items-center w-full p-4 max-[768px]:justify-end">
         <ul
-          className={`flex gap-[2rem] justify-between items-center font-[18px] overflow-hidden ${
+          className={`flex gap-[2rem] justify-between items-center text-[18px] overflow-hidden ${
             isOpen
               ? "max-[768px]:flex hidden absolute flex-col top-[105px] right-[30px] bg-[#f3f3f3] rounded-bl-2xl rounded-br-2xl"
               : "max-[768px]:hidden"
@@ -33,18 +33,18 @@ export default function Nav() {
             <a href="#">Blog</a>
           </li>
         </ul>
-        <div className="flex items-center mr-[1rem]">
-          <button className="rounded-[26px] border-[1px] border-black px-[22px] py-[8px] font-[16px] hover:bg-[#fff] duration-300">
+        <div className="flex items-center gap-5">
+          <button className="rounded-[26px] border-[1px] border-black px-[22px] py-[8px] font-[16px] hover:bg-[#fff] duration-300 max-[425px]:hidden">
             Register
           </button>
-          <button className="flex bg-[#352ce8] text-white rounded-[26px] px-[22px] py-[8px] font-[16px] ml-[16px] gap-1 hover:bg-[#2921c2] duration-300">
+          <button className="flex items-center bg-[#352ce8] text-white rounded-[26px] px-[22px] py-[8px] font-[16px] gap-1 hover:bg-[#2921c2] duration-300">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-5 h-5"
+              className="w-5 h-5 ali max-[475px]:hidden"
             >
               <path
                 strokeLinecap="round"
@@ -52,7 +52,7 @@ export default function Nav() {
                 d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
               />
             </svg>
-            <span className="">Log in</span>
+            <span className="">Login</span>
           </button>
         </div>
       </nav>
@@ -64,7 +64,7 @@ export default function Nav() {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-6 h-6 mr-[54px]"
+            className="w-6 h-6 mr-[36px]"
           >
             <path
               strokeLinecap="round"
@@ -79,7 +79,7 @@ export default function Nav() {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-6 h-6 mr-[54px]"
+            className="w-6 h-6 mr-[36px]"
           >
             <path
               strokeLinecap="round"

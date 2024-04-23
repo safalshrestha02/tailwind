@@ -10,7 +10,7 @@ import { SliderData } from "../constants/slider";
 
 export default function Slider() {
   return (
-    <div className="slider">
+    <div className="flex flex-col items-center justify-center p-[1rem] rounded-[56px]">
       <Swiper
         breakpoints={{
           340: {
@@ -31,21 +31,18 @@ export default function Slider() {
           },
         }}
         freeMode={true}
-        // pagination={{
-        //   clickable: true,
-        // }}
         modules={[FreeMode, Pagination]}
-        className="slider-card"
+        className="max-w-[100%] rounded-[26px]"
       >
         {SliderData.map((item) => (
           <SwiperSlide key={item.heading}>
-            <div className="card">
-              <h1>{item.heading}</h1>
-              <p>
+            <div className="flex flex-col rounded-[26px] justify-end h-[490px] gap-[1rem] p-[2rem] bg-gradient-to-r from-[#cb9fda] to-[#94749e]">
+              <h1 className="text-[32px] text-white font-medium">{item.heading}</h1>
+              <p className="text-white font-medium">
                 From the start you cannot choose which phrases to advertise
                 with.
               </p>
-              <button>
+              <button className="flex items-center justify-between rounded-[18px] px-[18px] py-[8px] bg-white hover:bg-[#f3f3f3] duration-300">
                 Learn more
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
